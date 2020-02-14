@@ -22,7 +22,7 @@ namespace Cybermapa
         {
             
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;//Protocolo de Seguridad
-            string URL = "https://cloud13.cybermapa.com/ws/ws.js?";
+            string URL = "https://cloud13.cybermapa.com/ws/ws.js?";//direccion url del WEB SERVICE
             var Data = @"{""user"":""PANA"",""pwd"": ""MUNDIAL2016"",""action"": ""DATOSACTUALES""}"; //body
 
             
