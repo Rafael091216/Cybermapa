@@ -50,29 +50,33 @@ namespace Cybermapa
                 Console.WriteLine(response); //se muestra los datos del json
                 Console.ReadKey();
 
+                dynamic jsonObj = JsonConvert.DeserializeObject(response); //deserealiza el json
+                Console.WriteLine(jsonObj); //se muestra en FORMATO JSON
+                Console.ReadKey();
+
                 var models = JsonConvert.DeserializeObject<IList<RBA>>(response);//deserealiza el json y accede a cada indice individual
                 foreach (RBA model in models) //itera el modelo y muestra lo que hay en el JSON
                 {
-                    
-                    Console.WriteLine(model.gps);
+
+                    Console.WriteLine("IMEI: "+ model.gps);
                     Console.ReadKey();
-                    Console.WriteLine(model.evento);
+                    Console.WriteLine("Evento: "+ model.evento);
                     Console.ReadKey();
-        
+
                 }
 
                 //dynamic jsonObj = JsonConvert.DeserializeObject(response); //deserealiza el json
-                //Console.WriteLine(jsonObj); //se muestra en json
+                //Console.WriteLine(jsonObj); //se muestra en FORMATO JSON
                 //Console.ReadKey();
 
 
                 ////itera el array para mostrar los datos de cada campo con el mismo nombre
                 //foreach (dynamic item in jsonObj)
-                //Console.WriteLine($"gps : {item.gps} evento: {item.evento}");
+                //    Console.WriteLine($"gps : {item.gps} evento: {item.evento}");
                 //Console.ReadKey();
                 //var gps = jsonObj[0]["gps"].ToString(); //para cada valor
-                //    Console.WriteLine(gps);
-                //    Console.ReadKey();
+                //var evento = jsonObj[0]["evento"].ToString();
+                //Console.ReadKey();
 
 
 
