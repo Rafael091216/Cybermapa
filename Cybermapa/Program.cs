@@ -60,7 +60,7 @@ namespace Cybermapa
 
                     Console.WriteLine("IMEI: "+ model.gps); //MUESTRA IMEI
                     Console.ReadKey();
-                    Console.WriteLine("Evento: "+ model.evento);
+                    Console.WriteLine("Evento: "+ model.evento);//MUEWSTRA EL EVENTO
                     Console.ReadKey();
 
                 }
