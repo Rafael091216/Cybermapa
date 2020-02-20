@@ -58,7 +58,7 @@ namespace Cybermapa
                 foreach (RBA model in models) //itera el modelo y muestra lo que hay en el JSON
                 {
 
-                    Console.WriteLine("IMEI: "+ model.gps);
+                    Console.WriteLine("IMEI: "+ model.gps); //MUESTRA IMEI
                     Console.ReadKey();
                     Console.WriteLine("Evento: "+ model.evento);
                     Console.ReadKey();
